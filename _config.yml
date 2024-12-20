@@ -11,7 +11,7 @@ locale                   : "Montreal-CA"
 title                    : "Your Name / Site Title"
 title_separator          : "-"
 name                     : &name "Hy Vu"
-description              : &description "McGill Pharmacology"
+description              : &description "---"
 #url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 #baseurl                  : "" # the subpath of your site, e.g. "/blog"
 #repository               : "academicpages/academicpages.github.io"
@@ -21,20 +21,20 @@ description              : &description "McGill Pharmacology"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  # avatar           : "profile.png"
   name             : "Hy Vu"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
+  bio              : "McGill Pharmacology"
+  location         : "Montreal"
   employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  #uri              : # URL
+  email            : "hyvu15@gmail.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  # orcid            : "http://orcid.org/yourorcidurl"
   semantic         : # URL
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
