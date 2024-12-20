@@ -274,6 +274,17 @@ defaults:
       author_profile: true
       share: true
       comment: true
+
+# _lecture-notes
+  - scope:
+      path: ""
+      type: lecture-notes
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+      
   # _talks
   - scope:
       path: ""
