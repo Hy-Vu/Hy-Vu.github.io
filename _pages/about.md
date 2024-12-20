@@ -1,1 +1,6 @@
-This is the front page 
+---
+permalink: / 
+title: "Hello there"
+redirect_from: 
+  - /about/
+  - /about.html
