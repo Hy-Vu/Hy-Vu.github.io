@@ -21,7 +21,7 @@ url                      : https://hy-vu.github.io # the base hostname & protoco
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  # avatar           : "profile.png"
+  avatar           : "bio-photo.jpg"
   name             : "Hy Vu"
   pronouns         : # example: "she/her"  
   bio              : "McGill Pharmacology"
