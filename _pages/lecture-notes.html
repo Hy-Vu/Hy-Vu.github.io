@@ -21,29 +21,27 @@ This is a collection of some selected lecture that I've taken note for since Fal
         }
         .pdf-box {
             text-align: center;
-            background: white;
-            border: 1px solid #ccc;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            padding: 20px;
-            width: 300px;
+        }
+        .pdf-title {
+            background-color: #333; /* Dark background for the title */
+            color: white; /* White text for contrast */
+            font-size: 1.2em;
+            margin: 0;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
         }
         .pdf-box img {
-            max-width: 100%;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            max-width: 300px;
+            display: block;
             cursor: pointer;
-        }
-        .pdf-box h2 {
-            font-size: 1.2em;
-            margin: 0 0 15px;
-            color: #333;
         }
         .pdf-box a {
             text-decoration: none;
         }
         .pdf-box a:hover img {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(1.03); /* Slight zoom effect on hover */
+            transition: transform 0.3s ease;
         }
         /* Responsive design for smaller screens */
         @media (max-width: 768px) {
