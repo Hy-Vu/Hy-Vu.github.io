@@ -271,7 +271,7 @@ defaults:
       type: portfolio
     values:
       layout: single
-      author_profile: true
+      author_profile: 
       share: true
       comment: true
 
@@ -281,7 +281,7 @@ defaults:
       type: lecture-notes
     values:
       layout: single
-      author_profile: true
+      author_profile: 
       share: true
       comment: true
 
