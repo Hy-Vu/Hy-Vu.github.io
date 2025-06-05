@@ -284,6 +284,16 @@ defaults:
       author_profile: true
       share: true
       comment: true
+
+# _independent-studies
+  - scope:
+      path: ""
+      type: independent-studies
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
       
   # _talks
   - scope:
