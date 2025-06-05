@@ -1,1 +1,9 @@
+body {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
 
+.container, .main-content, .pdf-container {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
