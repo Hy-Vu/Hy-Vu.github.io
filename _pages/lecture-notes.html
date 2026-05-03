@@ -6,71 +6,31 @@ author_profile: true
 ---
 
 <style>
-  .lecture-notes-page {
-    max-width: 1450px;
-    margin: 0 auto;
-    padding: 30px 20px;
-  }
+.lecture-notes-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
 
-  .lecture-intro {
-    font-size: 1.05em;
-    line-height: 1.6;
-    margin-bottom: 40px;
-  }
+.pdf-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
 
-  .year-title {
-    color: DodgerBlue;
-    margin: 45px 0 20px;
-    font-size: 1.7em;
-    font-weight: 700;
-  }
+.pdf-box {
+  width: 300px;
+  text-align: center;
+}
 
-  .pdf-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 28px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 50px;
-  }
-
-  .pdf-box {
-    width: 350px;
-    text-align: center;
-  }
-
-  .pdf-box img {
-    width: 100%;
-    max-width: 300px;
-    display: block;
-    cursor: pointer;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-  }
-
-  .pdf-box a {
-    text-decoration: none;
-    display: block;
-  }
-
-  .pdf-box a:hover img {
-    transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-  }
-
-  @media (max-width: 768px) {
-    .lecture-notes-page {
-      padding: 20px 10px;
-    }
-
-    .pdf-container {
-      justify-content: center;
-    }
-
-    .pdf-box {
-      width: 90%;
-      max-width: 320px;
-    }
-  }
+.pdf-box img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+}
 </style>
 
 <div class="lecture-notes-page">
