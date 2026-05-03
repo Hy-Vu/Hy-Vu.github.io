@@ -1,126 +1,150 @@
 ---
 layout: archive
-title: 
+title:
 permalink: /lecture-notes/
 author_profile: true
 ---
 
+<style>
+  .lecture-notes-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
 
+  .lecture-intro {
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        /* Style specific to the PDF section */
-        .pdf-container {
-            display: flex;
-            gap: 20px;
-            justify-content: flex-start; /* Align items to the left */
-            align-items: flex-start; /* Top-align the items */
-            margin-top: 20px;
-        }
-        .pdf-box {
-            text-align: center;
-        }
-        .pdf-title {
-            /* Title box styles */
-            background-color: #f2f2f2; /* Very light gray background (change this color here if needed) */
-            color: #333; /* Text color */
-            font-size: 1.2em;
-            margin: 0;
-            padding: 10px;
-            width: 100%;
-            text-align: center;
-            border: 1px solid #ddd; /* Border around the title box (light gray) */
-            box-sizing: border-box; /* Ensures padding and border are included in width */
-        }
-        .pdf-box img {
-            max-width: 300px;
-            display: block;
-            cursor: pointer;
-        }
-        .pdf-box a {
-            text-decoration: none;
-        }
-        .pdf-box a:hover img {
-            transform: scale(1.03); /* Slight zoom effect on hover */
-            transition: transform 0.3s ease;
-        }
-        /* Responsive design for smaller screens */
-        @media (max-width: 768px) {
-            .pdf-container {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
-</head>
+  .year-title {
+    color: DodgerBlue;
+    margin: 45px 0 20px;
+    font-size: 1.7em;
+    font-weight: 700;
+  }
 
-<body>
-    <div class="pdf-container" style="position: relative; left: -200px;">
-        This is a collection of some selected lecture (pharmacology and mathematics) that I've taken note for since Fall 2023 to Winter 2024. More to come :))
+  .pdf-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+
+  .pdf-box {
+    width: 300px;
+    text-align: center;
+  }
+
+  .pdf-box img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .pdf-box a {
+    text-decoration: none;
+    display: block;
+  }
+
+  .pdf-box a:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  }
+
+  @media (max-width: 768px) {
+    .lecture-notes-page {
+      padding: 20px 10px;
+    }
+
+    .pdf-container {
+      justify-content: center;
+    }
+
+    .pdf-box {
+      width: 90%;
+      max-width: 320px;
+    }
+  }
+</style>
+
+<div class="lecture-notes-page">
+
+  <p class="lecture-intro">
+    This is a collection of some selected lecture notes pharmacology and mathematics
+    that I've taken note for since Fall 2023 to Winter 2024. More to come :))
+  </p>
+
+  <h2 class="year-title">Year 2</h2>
+
+  <div class="pdf-container">
+
+    <div class="pdf-box">
+      <a href="https://Hy-Vu.github.io/PDFs/U2S3_Drug_Action%20(1).pdf" target="_blank">
+        <img src="https://Hy-Vu.github.io/images/McGill%20U2S3%20Lectures%20Cover%20(3).png" alt="Drug Actions lecture notes">
+      </a>
     </div>
-    <h2 style="color:DodgerBlue; position: relative; left: -200px;"> Year 2 </h2>
-        <div class="pdf-container" style="position: relative; left: -200px;">
-        <!-- PDF 1 -->
-        <div class="pdf-box">
-            <a href="https://Hy-Vu.github.io/PDFs/U2S3_Drug_Action (1).pdf" target="_blank">
-                <img src="https://Hy-Vu.github.io/images/McGill U2S3 Lectures Cover (3).png" alt="PDF 1 Thumbnail">
-            </a>
-        </div>
-        <!-- PDF 2 -->
-        <div class="pdf-box">
-            <a href="https://Hy-Vu.github.io/PDFs/U2S3_Metabolic_Biochemistry-compressed.pdf" target="_blank">
-                <img src="https://Hy-Vu.github.io/images/McGill U2S3 Lectures Cover (4).png" alt="PDF 2 Thumbnail">
-            </a>
-        </div>
-        <!-- PDF 3 -->
-        <div class="pdf-box">
-            <a href="https://Hy-Vu.github.io/PDFs/U2S3_Algebra_I.pdf" target="_blank">
-                <img src="https://Hy-Vu.github.io/images/McGill U2S3 Lectures Cover.png" alt="PDF 3 Thumbnail">
-            </a>
-        </div>
-        <!-- PDF 4 -->
-        <div class="pdf-box">
-            <a href="https://Hy-Vu.github.io/PDFs/U2S3_Honour_Analysis_I.pdf" target="_blank">
-                <img src="https://Hy-Vu.github.io/images/McGill U2S3 Lectures Cover (1).png" alt="PDF 4 Thumbnail">
-            </a>
-        </div>
-        <!-- PDF 5 -->
-        <div class="pdf-box">
-            <a href="https://Hy-Vu.github.io/PDFs/U2S3_Probability.pdf" target="_blank">
-                <img src="https://Hy-Vu.github.io/images/McGill U2S3 Lectures Cover (2).png" alt="PDF 5 Thumbnail">
-            </a>
-        </div>
-    </div>
-    <h2 style="color:DodgerBlue;position: relative; left: -200px;"> Year 1 </h2>
-    <div class="pdf-container" style="position: relative; left: -200px;">
-        <!-- PDF 1 -->
-        <div class="pdf-box">
-            <a href="https://Hy-Vu.github.io/PDFs/U1S2_Organic_Chemistry_II.pdf" target="_blank">
-                <img src="https://Hy-Vu.github.io/images/McGill U1S2 Lectures Cover.png" alt="PDF 1 Thumbnail">
-            </a>
-        </div>
-        <!-- PDF 2 -->
-        <div class="pdf-box">
-            <a href="https://Hy-Vu.github.io/PDFs/U1S2_Mammalian_Physiology_II-compressed.pdf" target="_blank">
-                <img src="https://Hy-Vu.github.io/images/McGill U1S2 Lectures Cover (1).png" alt="PDF 2 Thumbnail">
-            </a>
-        </div>
-        <!-- PDF 3 -->
-        <div class="pdf-box">
-            <a href="https://Hy-Vu.github.io/PDFs/U1S1_Mammalian_Physiology_I-compressed.pdf" target="_blank">
-                <img src="https://Hy-Vu.github.io/images/McGill U1 Lectures Cover.png" alt="PDF 3 Thumbnail">
-            </a>
-        </div>
-        <!-- PDF 4 -->
-        <div class="pdf-box">
-            <a href="https://Hy-Vu.github.io/PDFs/U1S1_Molecular_Biology (1)-compressed.pdf" target="_blank">
-                <img src="https://Hy-Vu.github.io/images/McGill U1 Lectures Cover (1).png" alt="PDF 4 Thumbnail">
-            </a>
-        </div>
-    </div>
-</body>
-</html>
 
+    <div class="pdf-box">
+      <a href="https://Hy-Vu.github.io/PDFs/U2S3_Metabolic_Biochemistry-compressed.pdf" target="_blank">
+        <img src="https://Hy-Vu.github.io/images/McGill%20U2S3%20Lectures%20Cover%20(4).png" alt="Metabolic Biochemistry lecture notes">
+      </a>
+    </div>
+
+    <div class="pdf-box">
+      <a href="https://Hy-Vu.github.io/PDFs/U2S3_Algebra_I.pdf" target="_blank">
+        <img src="https://Hy-Vu.github.io/images/McGill%20U2S3%20Lectures%20Cover.png" alt="Algebra I lecture notes">
+      </a>
+    </div>
+
+    <div class="pdf-box">
+      <a href="https://Hy-Vu.github.io/PDFs/U2S3_Honour_Analysis_I.pdf" target="_blank">
+        <img src="https://Hy-Vu.github.io/images/McGill%20U2S3%20Lectures%20Cover%20(1).png" alt="Honours Analysis I lecture notes">
+      </a>
+    </div>
+
+    <div class="pdf-box">
+      <a href="https://Hy-Vu.github.io/PDFs/U2S3_Probability.pdf" target="_blank">
+        <img src="https://Hy-Vu.github.io/images/McGill%20U2S3%20Lectures%20Cover%20(2).png" alt="Probability lecture notes">
+      </a>
+    </div>
+
+  </div>
+
+  <h2 class="year-title">Year 1</h2>
+
+  <div class="pdf-container">
+
+    <div class="pdf-box">
+      <a href="https://Hy-Vu.github.io/PDFs/U1S2_Organic_Chemistry_II.pdf" target="_blank">
+        <img src="https://Hy-Vu.github.io/images/McGill%20U1S2%20Lectures%20Cover.png" alt="Organic Chemistry II lecture notes">
+      </a>
+    </div>
+
+    <div class="pdf-box">
+      <a href="https://Hy-Vu.github.io/PDFs/U1S2_Mammalian_Physiology_II-compressed.pdf" target="_blank">
+        <img src="https://Hy-Vu.github.io/images/McGill%20U1S2%20Lectures%20Cover%20(1).png" alt="Mammalian Physiology II lecture notes">
+      </a>
+    </div>
+
+    <div class="pdf-box">
+      <a href="https://Hy-Vu.github.io/PDFs/U1S1_Mammalian_Physiology_I-compressed.pdf" target="_blank">
+        <img src="https://Hy-Vu.github.io/images/McGill%20U1%20Lectures%20Cover.png" alt="Mammalian Physiology I lecture notes">
+      </a>
+    </div>
+
+    <div class="pdf-box">
+      <a href="https://Hy-Vu.github.io/PDFs/U1S1_Molecular_Biology%20(1)-compressed.pdf" target="_blank">
+        <img src="https://Hy-Vu.github.io/images/McGill%20U1%20Lectures%20Cover%20(1).png" alt="Molecular Biology lecture notes">
+      </a>
+    </div>
+
+  </div>
+
+</div>
 
