@@ -119,6 +119,34 @@ author_profile: true
       flex: 0 0 100%;
     }
   }
+
+
+  .year-section {
+  width: 100%;
+  margin: 0 0 55px 0;
+  padding: 0;
+  clear: both;
+}
+
+.year-title {
+  color: DodgerBlue;
+  margin: 45px 0 20px 0;
+  padding: 0;
+  font-size: 1.7em;
+  font-weight: 700;
+  text-align: left;
+}
+
+.pdf-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 </style>
 
 <div class="lecture-notes-page">
@@ -128,7 +156,8 @@ author_profile: true
     that I've taken note for since Fall 2023 to Winter 2024. More to come :))
   </p>
 
-    <h2 class="year-title">Year 2</h2>
+  <section class="year-section">
+  <h2 class="year-title">Year 2</h2>
 
   <div class="pdf-container">
 
@@ -219,10 +248,11 @@ author_profile: true
 
   </div>
 </div>
+</section>
 
 
-
-<h2 class="year-title">Year 1</h2>
+<section class="year-section">
+  <h2 class="year-title">Year 1</h2>
 
 <div class="pdf-container">
 
@@ -303,3 +333,4 @@ author_profile: true
   </div>
 
 </div>
+</section>
