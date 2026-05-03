@@ -38,37 +38,47 @@ author_profile: true
     min-width: 260px;
   }
 
-  .pdf-card {
-    display: block;
-    text-decoration: none;
-    color: #222;
-    border: 1.5px solid #999;
-    background: #fafafa;
-    min-height: 260px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
+.pdf-card,
+.pdf-card:link,
+.pdf-card:visited,
+.pdf-card:hover,
+.pdf-card:active {
+  display: block;
+  text-decoration: none !important;
+  color: #222;
+  border: 1.5px solid #999;
+  background: #fafafa;
+  min-height: 260px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-  .pdf-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
-  }
+.pdf-card *,
+.pdf-card *:hover {
+  text-decoration: none !important;
+}
 
-  .pdf-card-top {
-    padding: 18px 16px 14px 16px;
-    background: #f4e2da;
-  }
+.pdf-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
 
-  .pdf-card-title {
-    font-size: 1.8em;
-    font-weight: 700;
-    line-height: 1.15;
-    margin-bottom: 6px;
-  }
+.pdf-card-top {
+  padding: 18px 16px 14px 16px;
+  background: #8b0000;
+}
 
-  .pdf-card-subtitle {
-    font-size: 0.92em;
-    color: #5a5a5a;
-  }
+.pdf-card-title {
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.pdf-card-subtitle {
+  font-size: 0.92em;
+  color: #f1f1f1;
+}
 
   .pdf-card-divider {
     border-top: 1px solid #999;
