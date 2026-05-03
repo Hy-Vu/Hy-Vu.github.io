@@ -6,31 +6,109 @@ author_profile: true
 ---
 
 <style>
-.lecture-notes-page {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 30px 20px;
-}
+  .lecture-notes-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
 
-.pdf-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-bottom: 50px;
-}
+  .lecture-intro {
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
 
-.pdf-box {
-  width: 300px;
-  text-align: center;
-}
+  .year-title {
+    color: DodgerBlue;
+    margin: 45px 0 20px;
+    font-size: 1.7em;
+    font-weight: 700;
+  }
 
-.pdf-box img {
-  width: 100%;
-  max-width: 300px;
-  display: block;
-}
+  .pdf-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: stretch;
+    margin-bottom: 50px;
+  }
+
+  .pdf-box {
+    flex: 0 0 calc((100% - 48px) / 3); /* 3 per row */
+    min-width: 260px;
+  }
+
+  .pdf-card {
+    display: block;
+    text-decoration: none;
+    color: #222;
+    border: 1.5px solid #999;
+    background: #fafafa;
+    min-height: 260px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .pdf-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  }
+
+  .pdf-card-top {
+    padding: 18px 16px 14px 16px;
+    background: #f4e2da;
+  }
+
+  .pdf-card-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 6px;
+  }
+
+  .pdf-card-subtitle {
+    font-size: 0.92em;
+    color: #5a5a5a;
+  }
+
+  .pdf-card-divider {
+    border-top: 1px solid #999;
+  }
+
+  .pdf-card-bottom {
+    padding: 16px;
+    background: #fcfcfc;
+  }
+
+  .pdf-card-label {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .pdf-card-description {
+    font-size: 1em;
+    line-height: 1.45;
+    color: #333;
+    margin-bottom: 12px;
+  }
+
+  .pdf-card-code {
+    font-size: 0.95em;
+    color: #666;
+    font-style: italic;
+  }
+
+  @media (max-width: 900px) {
+    .pdf-box {
+      flex: 0 0 calc((100% - 24px) / 2);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .pdf-box {
+      flex: 0 0 100%;
+    }
+  }
 </style>
 
 <div class="lecture-notes-page">
@@ -40,41 +118,102 @@ author_profile: true
     that I've taken note for since Fall 2023 to Winter 2024. More to come :))
   </p>
 
-  <h2 class="year-title">Year 2</h2>
+    <h2 class="year-title">Year 2</h2>
 
   <div class="pdf-container">
 
     <div class="pdf-box">
-      <a href="https://Hy-Vu.github.io/PDFs/U2S3_Drug_Action%20(1).pdf" target="_blank">
-        <img src="https://Hy-Vu.github.io/images/McGill%20U2S3%20Lectures%20Cover%20(3).png" alt="Drug Actions lecture notes">
+      <a class="pdf-card" href="https://Hy-Vu.github.io/PDFs/U2S3_Drug_Action%20(1).pdf" target="_blank">
+        <div class="pdf-card-top">
+          <div class="pdf-card-title">Drug Actions</div>
+          <div class="pdf-card-subtitle">BSc. U2S3</div>
+        </div>
+        <div class="pdf-card-divider"></div>
+        <div class="pdf-card-bottom">
+          <div class="pdf-card-label">Lecture Notes</div>
+          <div class="pdf-card-description">
+            Notes covering major drug actions, mechanisms, receptor interactions,
+            and foundational pharmacological principles.
+          </div>
+          <div class="pdf-card-code">Course code: PHAR-XXXX</div>
+        </div>
       </a>
     </div>
 
     <div class="pdf-box">
-      <a href="https://Hy-Vu.github.io/PDFs/U2S3_Metabolic_Biochemistry-compressed.pdf" target="_blank">
-        <img src="https://Hy-Vu.github.io/images/McGill%20U2S3%20Lectures%20Cover%20(4).png" alt="Metabolic Biochemistry lecture notes">
+      <a class="pdf-card" href="https://Hy-Vu.github.io/PDFs/U2S3_Metabolic_Biochemistry-compressed.pdf" target="_blank">
+        <div class="pdf-card-top">
+          <div class="pdf-card-title">Metabolic Biochemistry</div>
+          <div class="pdf-card-subtitle">BSc. U2S3</div>
+        </div>
+        <div class="pdf-card-divider"></div>
+        <div class="pdf-card-bottom">
+          <div class="pdf-card-label">Lecture Notes</div>
+          <div class="pdf-card-description">
+            Central metabolic pathways, regulation, bioenergetics, carbohydrate,
+            lipid, and amino acid metabolism.
+          </div>
+          <div class="pdf-card-code">Course code: BIOC-XXXX</div>
+        </div>
       </a>
     </div>
 
     <div class="pdf-box">
-      <a href="https://Hy-Vu.github.io/PDFs/U2S3_Algebra_I.pdf" target="_blank">
-        <img src="https://Hy-Vu.github.io/images/McGill%20U2S3%20Lectures%20Cover.png" alt="Algebra I lecture notes">
+      <a class="pdf-card" href="https://Hy-Vu.github.io/PDFs/U2S3_Algebra_I.pdf" target="_blank">
+        <div class="pdf-card-top">
+          <div class="pdf-card-title">Algebra I</div>
+          <div class="pdf-card-subtitle">BSc. U2S3</div>
+        </div>
+        <div class="pdf-card-divider"></div>
+        <div class="pdf-card-bottom">
+          <div class="pdf-card-label">Lecture Notes</div>
+          <div class="pdf-card-description">
+            Groups, subgroups, quotient groups, rings, ideals, homomorphisms,
+            and introductory abstract algebra.
+          </div>
+          <div class="pdf-card-code">Course code: MATH-XXXX</div>
+        </div>
       </a>
     </div>
 
     <div class="pdf-box">
-      <a href="https://Hy-Vu.github.io/PDFs/U2S3_Honour_Analysis_I.pdf" target="_blank">
-        <img src="https://Hy-Vu.github.io/images/McGill%20U2S3%20Lectures%20Cover%20(1).png" alt="Honours Analysis I lecture notes">
+      <a class="pdf-card" href="https://Hy-Vu.github.io/PDFs/U2S3_Honour_Analysis_I.pdf" target="_blank">
+        <div class="pdf-card-top">
+          <div class="pdf-card-title">Honours Analysis I</div>
+          <div class="pdf-card-subtitle">BSc. U2S3</div>
+        </div>
+        <div class="pdf-card-divider"></div>
+        <div class="pdf-card-bottom">
+          <div class="pdf-card-label">Lecture Notes</div>
+          <div class="pdf-card-description">
+            Rigorous real analysis, limits, continuity, differentiation,
+            sequences, and foundational proofs.
+          </div>
+          <div class="pdf-card-code">Course code: MATH-XXXX</div>
+        </div>
       </a>
     </div>
 
     <div class="pdf-box">
-      <a href="https://Hy-Vu.github.io/PDFs/U2S3_Probability.pdf" target="_blank">
-        <img src="https://Hy-Vu.github.io/images/McGill%20U2S3%20Lectures%20Cover%20(2).png" alt="Probability lecture notes">
+      <a class="pdf-card" href="https://Hy-Vu.github.io/PDFs/U2S3_Probability.pdf" target="_blank">
+        <div class="pdf-card-top">
+          <div class="pdf-card-title">Probability</div>
+          <div class="pdf-card-subtitle">BSc. U2S3</div>
+        </div>
+        <div class="pdf-card-divider"></div>
+        <div class="pdf-card-bottom">
+          <div class="pdf-card-label">Lecture Notes</div>
+          <div class="pdf-card-description">
+            Probability spaces, random variables, distributions, expectation,
+            and core probabilistic methods.
+          </div>
+          <div class="pdf-card-code">Course code: MATH-XXXX</div>
+        </div>
       </a>
     </div>
 
   </div>
+</div>
 
   <h2 class="year-title">Year 1</h2>
 
