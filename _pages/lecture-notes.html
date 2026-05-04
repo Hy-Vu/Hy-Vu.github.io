@@ -43,7 +43,9 @@ author_profile: true
 .pdf-card:visited,
 .pdf-card:hover,
 .pdf-card:active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none !important;
   color: #222;
   border: 1.5px solid #999;
@@ -87,6 +89,7 @@ author_profile: true
   .pdf-card-bottom {
     padding: 16px;
     background: #fcfcfc;
+    flex: 1;
   }
 
   .pdf-card-label {
